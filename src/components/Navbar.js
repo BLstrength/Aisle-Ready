@@ -16,7 +16,7 @@ export default function Navbar() {
         <Link to="/" className={pathname === '/' ? 'active' : ''} onClick={() => setOpen(false)}>Home</Link>
         <Link to="/about" className={pathname === '/about' ? 'active' : ''} onClick={() => setOpen(false)}>About</Link>
         <Link to="/services" className={pathname === '/services' ? 'active' : ''} onClick={() => setOpen(false)}>Services</Link>
-        <a href="#contact" className="contact-btn" onClick={() => setOpen(false)}>Get Started</a>
+        <a href="#contact" className="contact-btn" onClick={() => setOpen(false)}>Say I Do</a>
       </div>
 
       <button className="hamburger" aria-label="Open menu" onClick={() => setOpen(o => !o)}>
