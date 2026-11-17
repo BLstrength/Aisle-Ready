@@ -1,14 +1,17 @@
 :root {
-  --cream: #FAF7F4;
-  --warm-white: #FFFFFF;
-  --rose: #C8956C;
-  --rose-dark: #A87A55;
-  --rose-light: #E8C9B0;
-  --blush: #F5EDE4;
-  --blush-deep: #E8D5C4;
-  --charcoal: #2D2520;
-  --stone: #7A6960;
-  --mint: #FBF5EF;
+  --black:       #0A0906;
+  --dark:        #15120E;
+  --dark-card:   #1E1A14;
+  --gold:        #C9A452;
+  --gold-light:  #DDB96A;
+  --gold-dark:   #9A7830;
+  --gold-pale:   #F5EDD8;
+  --cream:       #FAF8F4;
+  --warm-white:  #FFFFFF;
+  --blush:       #F3EDD8;
+  --blush-deep:  #E0D4B0;
+  --charcoal:    #1A1510;
+  --stone:       #7A7060;
 }
 
 *, *::before, *::after {

@@ -9,9 +9,9 @@
 .page-tag {
   font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--rose);
+  color: var(--gold-dark);
   margin-bottom: 0.75rem;
 }
 
@@ -25,7 +25,7 @@
 
 .page-title em {
   font-style: italic;
-  color: var(--rose);
+  color: var(--gold-dark);
 }
 
 .about-body p {
@@ -39,7 +39,7 @@
 /* ── APPROACH ── */
 .approach-section {
   padding: 5rem 5%;
-  background: var(--warm-white);
+  background: var(--dark);
 }
 
 .approach-header {
@@ -51,18 +51,18 @@
   font-family: 'Lora', serif;
   font-size: clamp(1.8rem, 3vw, 2.4rem);
   line-height: 1.25;
-  color: var(--charcoal);
+  color: #fff;
   margin-bottom: 0.75rem;
 }
 
 .section-title em {
   font-style: italic;
-  color: var(--rose);
+  color: var(--gold);
 }
 
 .section-sub {
   font-size: 1rem;
-  color: var(--stone);
+  color: rgba(255,255,255,0.55);
   line-height: 1.7;
   max-width: 480px;
   margin: 0 auto;
@@ -77,16 +77,17 @@
 }
 
 .approach-card {
-  background: var(--cream);
+  background: var(--dark-card);
   border-radius: 20px;
   padding: 2rem;
-  border: 1px solid var(--blush-deep);
-  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid rgba(201, 164, 82, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 
 .approach-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 36px rgba(200, 149, 108, 0.12);
+  box-shadow: 0 10px 36px rgba(201, 164, 82, 0.1);
+  border-color: rgba(201, 164, 82, 0.35);
 }
 
 .approach-icon {
@@ -97,13 +98,13 @@
 .approach-card h3 {
   font-size: 1.05rem;
   font-weight: 600;
-  color: var(--charcoal);
+  color: var(--gold-light);
   margin-bottom: 0.6rem;
 }
 
 .approach-card p {
   font-size: 0.88rem;
-  color: var(--stone);
+  color: rgba(255,255,255,0.55);
   line-height: 1.65;
 }
 

@@ -2,14 +2,15 @@
 .services-header {
   text-align: center;
   padding: 5rem 5% 3rem;
+  background: var(--black);
 }
 
 .page-tag {
   font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--rose);
+  color: var(--gold);
   margin-bottom: 0.75rem;
 }
 
@@ -17,18 +18,18 @@
   font-family: 'Lora', serif;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.2;
-  color: var(--charcoal);
+  color: #fff;
   margin-bottom: 1rem;
 }
 
 .page-title em {
   font-style: italic;
-  color: var(--rose);
+  color: var(--gold);
 }
 
 .services-sub {
   font-size: 1rem;
-  color: var(--stone);
+  color: rgba(255,255,255,0.55);
   max-width: 540px;
   margin: 0 auto;
   line-height: 1.7;
@@ -37,6 +38,7 @@
 /* ── GRID ── */
 .services-grid-section {
   padding: 1rem 5% 4rem;
+  background: var(--dark);
 }
 
 .services-grid {
@@ -48,10 +50,10 @@
 }
 
 .service-card {
-  background: var(--warm-white);
+  background: var(--dark-card);
   border-radius: 24px;
   padding: 2rem;
-  border: 2px solid var(--blush-deep);
+  border: 1px solid rgba(201, 164, 82, 0.15);
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
   position: relative;
   overflow: hidden;
@@ -63,66 +65,51 @@
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--rose-light), var(--rose));
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold-dark), var(--gold));
 }
 
 .service-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(200, 149, 108, 0.15);
-  border-color: var(--rose-light);
+  box-shadow: 0 12px 48px rgba(201, 164, 82, 0.15);
+  border-color: rgba(201, 164, 82, 0.35);
 }
 
 .service-card.featured {
-  background: linear-gradient(145deg, #3D2A20 0%, #2D1E16 100%);
-  border-color: transparent;
-  color: #fff;
+  background: linear-gradient(145deg, #1E1A0E 0%, #2A2210 100%);
+  border-color: rgba(201, 164, 82, 0.4);
 }
 
 .service-card.featured::before {
-  background: linear-gradient(90deg, var(--rose), #E8B080);
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  height: 4px;
 }
-
-.service-card.featured .prog-desc,
-.service-card.featured .prog-feature,
-.service-card.featured .prog-price span {
-  color: rgba(255,255,255,0.75);
-}
-
-.service-card.featured .prog-name,
-.service-card.featured .prog-price { color: #fff; }
-
-.service-card.featured .prog-cta {
-  background: #fff;
-  color: var(--rose-dark);
-}
-
-.service-card.featured .prog-cta:hover { background: var(--cream); }
 
 .popular-badge {
   display: inline-block;
-  background: rgba(255,255,255,0.15);
-  color: rgba(255,255,255,0.9);
+  background: rgba(201, 164, 82, 0.15);
+  color: var(--gold);
   font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 0.3rem 0.8rem;
   border-radius: 50px;
   margin-bottom: 1rem;
+  border: 1px solid rgba(201, 164, 82, 0.3);
 }
 
 .prog-name {
   font-family: 'Lora', serif;
   font-size: 1.4rem;
   font-weight: 600;
-  color: var(--charcoal);
+  color: #fff;
   margin-bottom: 0.5rem;
 }
 
 .prog-desc {
   font-size: 0.88rem;
-  color: var(--stone);
+  color: rgba(255,255,255,0.55);
   line-height: 1.65;
   margin-bottom: 1rem;
 }
@@ -131,14 +118,14 @@
   font-family: 'Lora', serif;
   font-size: 1.9rem;
   font-weight: 600;
-  color: var(--rose);
+  color: var(--gold);
   margin-bottom: 0.2rem;
 }
 
 .prog-price span {
   font-size: 0.85rem;
   font-weight: 400;
-  color: var(--stone);
+  color: rgba(255,255,255,0.4);
   font-family: 'DM Sans', sans-serif;
 }
 
@@ -153,7 +140,7 @@
 
 .prog-feature {
   font-size: 0.85rem;
-  color: var(--stone);
+  color: rgba(255,255,255,0.6);
   display: flex;
   align-items: flex-start;
   gap: 0.5rem;
@@ -162,7 +149,7 @@
 
 .prog-feature::before {
   content: '→';
-  color: var(--rose);
+  color: var(--gold);
   font-weight: 600;
   flex-shrink: 0;
   margin-top: 0.05rem;
@@ -171,132 +158,72 @@
 .prog-cta {
   display: block;
   text-align: center;
-  background: var(--rose);
-  color: #fff;
+  background: var(--gold);
+  color: var(--black);
   padding: 0.75rem;
   border-radius: 50px;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 1.5rem;
   transition: background 0.2s, transform 0.15s;
-  box-shadow: 0 4px 16px rgba(200, 149, 108, 0.3);
+  box-shadow: 0 4px 16px rgba(201, 164, 82, 0.3);
+  letter-spacing: 0.02em;
 }
 
 .prog-cta:hover {
-  background: var(--rose-dark);
+  background: var(--gold-light);
   transform: translateY(-1px);
-}
-
-/* ── ADD-ONS ── */
-.addons-section {
-  background: var(--warm-white);
-  padding: 4rem 5%;
-}
-
-.addons-header {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.section-title {
-  font-family: 'Lora', serif;
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
-  color: var(--charcoal);
-  margin-bottom: 0.6rem;
-}
-
-.section-title em {
-  font-style: italic;
-  color: var(--rose);
-}
-
-.section-sub {
-  font-size: 1rem;
-  color: var(--stone);
-  line-height: 1.7;
-  max-width: 480px;
-  margin: 0 auto;
-}
-
-.addons-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-.addon-card {
-  background: var(--cream);
-  border: 1.5px solid var(--blush-deep);
-  border-radius: 16px;
-  padding: 1.5rem;
-  text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.addon-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(200, 149, 108, 0.12);
-}
-
-.addon-name {
-  font-family: 'Lora', serif;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--charcoal);
-  margin-bottom: 0.4rem;
-}
-
-.addon-price {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--rose);
-  margin-bottom: 0.6rem;
-}
-
-.addon-desc {
-  font-size: 0.84rem;
-  color: var(--stone);
-  line-height: 1.6;
 }
 
 /* ── CTA STRIP ── */
 .services-cta {
   text-align: center;
   padding: 5rem 5%;
-  background: var(--cream);
+  background: var(--black);
+  position: relative;
+  overflow: hidden;
 }
 
-.services-cta .section-sub {
-  margin: 0.75rem auto 2rem;
+.services-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(201, 164, 82, 0.08) 0%, transparent 65%);
 }
+
+.services-cta .section-title { color: #fff; position: relative; z-index: 1; }
+.services-cta .section-title em { color: var(--gold); }
+.services-cta .section-sub { color: rgba(255,255,255,0.55); margin: 0.75rem auto 2rem; position: relative; z-index: 1; }
 
 .btn-primary {
-  background: var(--rose);
-  color: #fff;
+  background: var(--gold);
+  color: var(--black);
   padding: 0.9rem 2.2rem;
   border-radius: 50px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.95rem;
   transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
   display: inline-block;
-  box-shadow: 0 4px 20px rgba(200, 149, 108, 0.35);
+  box-shadow: 0 4px 24px rgba(201, 164, 82, 0.4);
+  letter-spacing: 0.02em;
+  position: relative;
+  z-index: 1;
 }
 
 .btn-primary:hover {
-  background: var(--rose-dark);
+  background: var(--gold-light);
   transform: translateY(-2px);
 }
 
 .services-cta-note {
   margin-top: 1.5rem;
   font-size: 0.82rem;
-  color: var(--stone);
+  color: rgba(255,255,255,0.3);
+  position: relative;
+  z-index: 1;
 }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .services-grid { grid-template-columns: 1fr; max-width: 480px; }
-  .addons-grid { grid-template-columns: 1fr; max-width: 480px; }
 }

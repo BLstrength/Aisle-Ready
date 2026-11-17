@@ -4,8 +4,8 @@ import './Footer.css'
 export default function Footer() {
   return (
     <footer className="footer">
-      <div>
-        <p className="footer-logo">Aisle <span>Ready Fitness</span></p>
+      <div className="footer-brand">
+        <img src="/logo.png" alt="Aisle Ready Fitness" className="footer-logo" />
         <p className="footer-tagline">Elite coaching for your wedding day.</p>
       </div>
       <div className="footer-links">

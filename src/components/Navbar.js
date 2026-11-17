@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-logo">
-        Aisle <span>Ready Fitness</span>
+        <img src="/logo.png" alt="Aisle Ready Fitness" />
       </Link>
 
       <div className={`navbar-links${open ? ' open' : ''}`}>
