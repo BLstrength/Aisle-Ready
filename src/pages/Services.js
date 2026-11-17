@@ -46,18 +46,6 @@ const services = [
   },
 ]
 
-const addons = [
-  {
-    name: 'Macro Coaching',
-    price: '$100',
-    desc: 'Weekly personalized macro plans with accountability through check-ins, progress photos, and a premium MyFitnessPal membership.',
-  },
-  {
-    name: 'Zoom Call',
-    price: '$50',
-    desc: 'A 60-minute one-on-one call to review your program, adjust your plan, or talk through nutrition strategy.',
-  },
-]
 
 export default function Services() {
   return (
@@ -88,24 +76,8 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Add-ons */}
-      <section className="addons-section">
-        <div className="addons-header">
-          <h2 className="section-title">Add-<em>ons</em></h2>
-          <p className="section-sub">Enhance any program with these optional extras.</p>
-        </div>
-        <div className="addons-grid">
-          {addons.map((a, i) => (
-            <div className="addon-card" key={i}>
-              <div className="addon-name">{a.name}</div>
-              <div className="addon-price">{a.price}</div>
-              <p className="addon-desc">{a.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
 
-      {/* CTA strip */}
+{/* CTA strip */}
       <section className="services-cta">
         <h2 className="section-title">Not sure which program is right for you?</h2>
         <p className="section-sub">Book a free 30-minute consultation and Bobby will help you find the right fit for your timeline and goals.</p>
