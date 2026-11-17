@@ -1,11 +1,17 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import './Navbar.css'
 
 export default function Navbar() {
+  const { pathname } = useLocation()
+
   return (
-    <nav style={{ padding: '1rem 2rem', background: '#fff', borderBottom: '1px solid #eee', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-      <Link to="/" style={{ fontWeight: 800, fontSize: '1.4rem' }}>Aisle Ready</Link>
-      <div style={{ display: 'flex', gap: '1.5rem', fontWeight: 600 }}>
-        <Link to="/">Home</Link>
+    <nav className="navbar">
+      <Link to="/" className="navbar-logo">Aisle Ready</Link>
+      <div className="navbar-links">
+        <Link to="/" className={pathname === '/' ? 'active' : ''}>Home</Link>
+        <Link to="/about" className={pathname === '/about' ? 'active' : ''}>About</Link>
+        <Link to="/services" className={pathname === '/services' ? 'active' : ''}>Services</Link>
+        <a href="mailto:contact@aisleready.com" className="contact-btn">Contact Us</a>
       </div>
     </nav>
   )
