@@ -1,16 +1,37 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --cream: #FAF7F4;
+  --warm-white: #FFFFFF;
+  --rose: #C8956C;
+  --rose-dark: #A87A55;
+  --rose-light: #E8C9B0;
+  --blush: #F5EDE4;
+  --blush-deep: #E8D5C4;
+  --charcoal: #2D2520;
+  --stone: #7A6960;
+  --mint: #FBF5EF;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
 body {
-  font-family: 'Nunito', sans-serif;
-  color: #1a1a1a;
-  background: #fff;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--charcoal);
+  background: var(--cream);
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
 }

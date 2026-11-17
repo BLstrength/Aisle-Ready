@@ -1,91 +1,173 @@
+/* ── ABOUT HERO ── */
 .about-hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 70vh;
-}
-
-.about-photo-placeholder {
-  background: #f0ebe5;
-  display: flex;
+  min-height: 80vh;
   align-items: center;
-  justify-content: center;
-  font-size: 0.9rem;
-  color: #aaa;
+  padding: 5rem 5%;
+  gap: 4rem;
+}
+
+.page-tag {
+  font-size: 0.75rem;
   font-weight: 600;
-  border-radius: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--rose);
+  margin-bottom: 0.75rem;
 }
 
-.about-photo-placeholder.large {
-  border-radius: 0;
-  min-height: 500px;
-}
-
-.about-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 4rem 3rem;
-}
-
-.about-text h1 {
-  font-size: 2.4rem;
-  font-weight: 900;
-  color: #2d2d2d;
+.page-title {
+  font-family: 'Lora', serif;
+  font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+  line-height: 1.2;
+  color: var(--charcoal);
   margin-bottom: 1.5rem;
 }
 
-.about-text p {
-  font-size: 1.05rem;
-  color: #666;
+.page-title em {
+  font-style: italic;
+  color: var(--rose);
+}
+
+.about-body p {
+  font-size: 1rem;
+  color: var(--stone);
   line-height: 1.8;
   margin-bottom: 1rem;
 }
 
-.about-photos {
-  padding: 5rem 2.5rem;
-  text-align: center;
-  max-width: 900px;
+.about-photo img {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 24px;
+  box-shadow: 0 16px 64px rgba(45, 37, 32, 0.15);
+}
+
+/* ── STATS ── */
+.stats-section {
+  background: var(--warm-white);
+  padding: 3.5rem 5%;
+}
+
+.stats-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.about-photos h2 {
-  font-size: 2rem;
-  font-weight: 900;
-  color: #2d2d2d;
-  margin-bottom: 2rem;
+.stat-card {
+  background: var(--cream);
+  border: 1px solid var(--blush-deep);
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  flex: 1;
+  min-width: 140px;
 }
 
-.about-photo-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
+.stat-num {
+  font-family: 'Lora', serif;
+  font-size: 1.9rem;
+  color: var(--rose);
+  font-weight: 600;
 }
 
-.about-photo-row .about-photo-placeholder {
-  aspect-ratio: 4/3;
+.stat-label {
+  font-size: 0.78rem;
+  color: var(--stone);
+  margin-top: 0.2rem;
+  line-height: 1.4;
 }
 
-.about-caption {
-  color: #666;
+/* ── APPROACH ── */
+.approach-section {
+  padding: 5.5rem 5%;
+  background: var(--cream);
+}
+
+.approach-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-family: 'Lora', serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  line-height: 1.25;
+  color: var(--charcoal);
+  margin-bottom: 0.75rem;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--rose);
+}
+
+.section-sub {
   font-size: 1rem;
+  color: var(--stone);
   line-height: 1.7;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+.approach-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.approach-card {
+  background: var(--warm-white);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid var(--blush-deep);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.approach-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 36px rgba(200, 149, 108, 0.12);
+}
+
+.approach-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.approach-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 0.6rem;
+}
+
+.approach-card p {
+  font-size: 0.88rem;
+  color: var(--stone);
+  line-height: 1.65;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
   .about-hero {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 4rem 5%;
   }
-  .about-photo-placeholder.large {
-    min-height: 280px;
+
+  .about-photo img {
+    height: 320px;
+    object-position: center 20%;
   }
-  .about-text {
-    padding: 2.5rem 1.5rem;
-  }
-  .about-text h1 {
-    font-size: 1.8rem;
-  }
-  .about-photo-row {
-    grid-template-columns: 1fr;
-  }
+
+  .stats-row { justify-content: center; }
+
+  .approach-grid { grid-template-columns: 1fr; }
 }

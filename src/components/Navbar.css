@@ -2,19 +2,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 2.5rem;
-  background: #fff;
-  border-bottom: 1px solid #eee;
+  padding: 1.25rem 5%;
+  background: rgba(250, 247, 244, 0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(200, 149, 108, 0.15);
   position: sticky;
   top: 0;
   z-index: 100;
+  transition: box-shadow 0.3s;
 }
 
 .navbar-logo {
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: #2d2d2d;
-  letter-spacing: -0.5px;
+  font-family: 'Lora', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  letter-spacing: -0.01em;
+}
+
+.navbar-logo span {
+  color: var(--rose);
+  font-style: italic;
 }
 
 .navbar-links {
@@ -24,39 +32,82 @@
 }
 
 .navbar-links a {
-  font-weight: 600;
-  color: #555;
-  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--stone);
+  font-size: 0.92rem;
   transition: color 0.2s;
 }
 
 .navbar-links a:hover,
 .navbar-links a.active {
-  color: #c8956c;
+  color: var(--rose);
 }
 
 .contact-btn {
-  background: #c8956c;
+  background: var(--rose) !important;
   color: #fff !important;
   padding: 0.55rem 1.3rem;
   border-radius: 50px;
-  font-weight: 700 !important;
-  transition: background 0.2s !important;
+  font-weight: 600 !important;
+  font-size: 0.88rem !important;
+  transition: background 0.2s, transform 0.15s !important;
+  box-shadow: 0 4px 16px rgba(200, 149, 108, 0.3);
 }
 
 .contact-btn:hover {
-  background: #b07d57 !important;
+  background: var(--rose-dark) !important;
+  transform: translateY(-1px);
   color: #fff !important;
 }
 
-@media (max-width: 600px) {
-  .navbar {
-    padding: 1rem 1.2rem;
-  }
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem;
+  z-index: 110;
+}
+
+.ham-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--charcoal);
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+  .contact-btn { display: none; }
+
   .navbar-links {
-    gap: 1rem;
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: rgba(250, 247, 244, 0.98);
+    backdrop-filter: blur(12px);
+    padding: 1rem 5% 1.25rem;
+    border-bottom: 1px solid rgba(200, 149, 108, 0.15);
+    box-shadow: 0 4px 16px rgba(45, 37, 32, 0.08);
   }
+
+  .navbar-links.open { display: flex; }
+
   .navbar-links a {
-    font-size: 0.85rem;
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+    background: rgba(200, 149, 108, 0.06);
+    border-radius: 10px;
   }
 }
