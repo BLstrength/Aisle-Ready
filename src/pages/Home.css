@@ -1,11 +1,11 @@
 /* ── HERO ── */
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 90vh;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 4rem 5%;
-  gap: 4rem;
+  min-height: 70vh;
+  padding: 5rem 5%;
+  text-align: center;
   position: relative;
   overflow: hidden;
 }
@@ -13,18 +13,15 @@
 .hero::before {
   content: '';
   position: absolute;
-  top: -10%;
-  right: -5%;
-  width: 55%;
-  height: 110%;
-  background: radial-gradient(ellipse at 60% 40%, var(--blush) 0%, var(--cream) 70%);
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 60%, var(--blush) 0%, var(--cream) 70%);
   z-index: 0;
-  border-radius: 40% 0 0 40%;
 }
 
 .hero-text {
   position: relative;
   z-index: 1;
+  max-width: 680px;
   animation: fadeUp 0.9s ease both;
 }
 
@@ -61,7 +58,9 @@
   color: var(--stone);
   line-height: 1.75;
   margin-bottom: 2rem;
-  max-width: 460px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-actions {
@@ -69,7 +68,7 @@
   gap: 1rem;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 2.5rem;
+  justify-content: center;
 }
 
 .btn-primary {
@@ -104,41 +103,6 @@
 .btn-ghost::after { content: '→'; transition: transform 0.2s; }
 .btn-ghost:hover::after { transform: translateX(3px); }
 
-.hero-stats {
-  display: flex;
-  gap: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--blush-deep);
-  flex-wrap: wrap;
-}
-
-.stat-num {
-  font-family: 'Lora', serif;
-  font-size: 1.75rem;
-  color: var(--rose);
-  font-weight: 600;
-}
-
-.stat-label {
-  font-size: 0.78rem;
-  color: var(--stone);
-  margin-top: 0.1rem;
-}
-
-.hero-visual {
-  position: relative;
-  z-index: 1;
-  animation: fadeUp 0.9s 0.2s ease both;
-}
-
-.hero-visual img {
-  width: 100%;
-  height: 580px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 24px;
-  box-shadow: 0 16px 64px rgba(45, 37, 32, 0.15);
-}
 
 /* ── HOW IT WORKS ── */
 .how {
@@ -337,26 +301,7 @@
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-    padding: 3rem 5%;
-    text-align: center;
-  }
-
-  .hero::before { display: none; }
-
-  .hero-text p { margin: 0 auto 2rem; }
-
-  .hero-actions { justify-content: center; }
-
-  .hero-stats { justify-content: center; }
-
-  .hero-visual img {
-    height: 340px;
-    object-position: center 20%;
-  }
-
+  .hero { padding: 4rem 5%; }
   .steps { grid-template-columns: 1fr; }
   .steps::before { display: none; }
 }

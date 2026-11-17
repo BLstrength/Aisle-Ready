@@ -15,23 +15,6 @@ export default function Home() {
             <Link to="/services" className="btn-primary">View Programs</Link>
             <a href="#contact" className="btn-ghost">Book a Free Consult</a>
           </div>
-          <div className="hero-stats">
-            <div className="stat-item">
-              <div className="stat-num">11</div>
-              <div className="stat-label">World Records</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-num">2,405</div>
-              <div className="stat-label">lb Competition Total</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-num">100%</div>
-              <div className="stat-label">Personalized Plans</div>
-            </div>
-          </div>
-        </div>
-        <div className="hero-visual">
-          <img src="/trainer.jpg" alt="Bobby Lawson — Aisle Ready Fitness Trainer" />
         </div>
       </section>
 
