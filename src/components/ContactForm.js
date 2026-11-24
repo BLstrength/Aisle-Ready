@@ -31,7 +31,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label>Tell us about your goals <span className="req">*</span></label>
-          <textarea rows="3" placeholder="What are you hoping to achieve before your wedding day?" />
+          <textarea rows="2" placeholder="What are you hoping to achieve before your wedding day?" />
         </div>
         <div className="form-submit">
           <button type="button">Say I Do</button>
