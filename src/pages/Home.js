@@ -115,26 +115,16 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <label>Email <span className="req">*</span></label>
-            <input type="email" placeholder="your@email.com" />
-          </div>
-          <div>
             <label>Phone Number <span className="req">*</span></label>
             <input type="tel" placeholder="e.g. +1 555 000 0000" />
           </div>
           <div>
-            <label>Wedding Date</label>
-            <input type="date" />
+            <label>Email <span className="req">*</span></label>
+            <input type="email" placeholder="your@email.com" />
           </div>
           <div>
-            <label>Service Interested In <span className="req">*</span></label>
-            <select defaultValue="">
-              <option value="" disabled>Select a service</option>
-              <option>1-on-1 Personal Training</option>
-              <option>Wedding Countdown Program</option>
-              <option>Bridal Party Package</option>
-              <option>Macro Coaching</option>
-            </select>
+            <label>Wedding Date</label>
+            <input type="text" placeholder="MM/DD/YYYY" />
           </div>
           <div>
             <label>Tell us about your goals <span className="req">*</span></label>
