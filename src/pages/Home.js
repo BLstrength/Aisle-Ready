@@ -87,7 +87,7 @@ export default function Home() {
           <div className="step">
             <div className="step-num">2</div>
             <h3>Your Custom Program</h3>
-            <p>A fully personalized training and nutrition plan built around your countdown — whether that's 3 months or a full year.</p>
+            <p>A fully personalized training and nutrition plan built around your countdown.</p>
           </div>
           <div className="step">
             <div className="step-num">3</div>
