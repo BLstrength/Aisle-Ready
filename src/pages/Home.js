@@ -8,8 +8,7 @@ export default function Home() {
       {/* Hero */}
       <section className="hero">
         <div className="hero-text">
-          <div className="hero-tag">Wedding Fitness Coaching</div>
-          <h1>Feel fit, confident, and <em>Aisle Ready</em></h1>
+<h1>Feel fit, confident, and <em>Aisle Ready</em></h1>
           <p>Luxury wedding fitness and nutrition in Pittsburgh</p>
           <div className="hero-actions">
             <a href="#contact" className="btn-primary">Say I Do</a>
