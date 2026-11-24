@@ -261,6 +261,14 @@
   line-height: 1.65;
 }
 
+.timeline-flex-note {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--stone);
+  margin: 0 auto 1.5rem;
+  max-width: 480px;
+}
+
 .timeline-cta {
   text-align: center;
 }

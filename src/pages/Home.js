@@ -42,7 +42,7 @@ export default function Home() {
       <section className="timeline-section">
         <div className="timeline-header">
           <h2 className="section-title">A package for <em>every</em> timeline</h2>
-          <p className="section-sub">Whether your big day is a few months away or a full year out, we have a plan to get you there.</p>
+          <p className="section-sub">These are our most common timelines, but we'll build a plan for any number of months until your big day.</p>
         </div>
         <div className="timeline-grid">
           <div className="tl-card">
@@ -67,6 +67,7 @@ export default function Home() {
             <p>The full journey — comprehensive fitness and nutrition transformation starting from day one of your engagement.</p>
           </div>
         </div>
+        <p className="timeline-flex-note">Don't see your timeline? Every plan can be adjusted to any length. Just tell us your date.</p>
         <div className="timeline-cta">
           <a href="#contact" className="btn-primary">Book a Free Consultation</a>
         </div>
