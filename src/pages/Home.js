@@ -9,12 +9,71 @@ export default function Home() {
       <section className="hero">
         <div className="hero-text">
           <div className="hero-tag">Wedding Fitness Coaching</div>
-          <h1>Look and feel your <em>best</em> on your wedding day.</h1>
-          <p>Personalized fitness and nutrition coaching built around your wedding date. Strength, confidence, and results — from an elite-level coach.</p>
+          <h1>Feel fit, confident, and ready for your <em>wedding day</em> with Aisle Ready Fitness.</h1>
+          <p>Luxury personal training and nutrition coaching for brides, grooms, and wedding parties — in Pittsburgh or online.</p>
           <div className="hero-actions">
-            <Link to="/services" className="btn-primary">View Programs</Link>
-            <a href="#contact" className="btn-ghost">Book a Free Consult</a>
+            <a href="#contact" className="btn-primary">Book a Free Consultation</a>
+            <Link to="/services" className="btn-ghost">View Programs</Link>
           </div>
+        </div>
+      </section>
+
+      {/* Trust Strip */}
+      <section className="trust-strip">
+        <div className="trust-inner">
+          <div className="trust-item">
+            <span className="trust-num">7+</span>
+            <span className="trust-label">Years of Coaching</span>
+          </div>
+          <div className="trust-divider" />
+          <div className="trust-item">
+            <span className="trust-num">Elite</span>
+            <span className="trust-label">Competitive Background</span>
+          </div>
+          <div className="trust-divider" />
+          <div className="trust-item">
+            <span className="trust-num">1-on-1</span>
+            <span className="trust-label">Personalized Programs</span>
+          </div>
+          <div className="trust-divider" />
+          <div className="trust-item">
+            <span className="trust-num">PGH</span>
+            <span className="trust-label">In-Person &amp; Online</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline Hook */}
+      <section className="timeline-section">
+        <div className="timeline-header">
+          <h2 className="section-title">A package for <em>every</em> timeline</h2>
+          <p className="section-sub">Whether your big day is a few months away or a full year out, we have a plan to get you there.</p>
+        </div>
+        <div className="timeline-grid">
+          <div className="tl-card">
+            <div className="tl-months">3</div>
+            <div className="tl-unit">months</div>
+            <p>Focused, high-intensity prep for couples on a tighter timeline. Rapid results without cutting corners.</p>
+          </div>
+          <div className="tl-card">
+            <div className="tl-months">6</div>
+            <div className="tl-unit">months</div>
+            <p>The most popular choice. Enough time to build real strength, lose body fat, and lock in lasting habits.</p>
+          </div>
+          <div className="tl-card tl-card--featured">
+            <div className="tl-badge">Most Transformative</div>
+            <div className="tl-months">9</div>
+            <div className="tl-unit">months</div>
+            <p>Build a truly strong, sculpted physique from the ground up. Deep habit formation and peak-day peaking.</p>
+          </div>
+          <div className="tl-card">
+            <div className="tl-months">12</div>
+            <div className="tl-unit">months</div>
+            <p>The full journey — comprehensive fitness and nutrition transformation starting from day one of your engagement.</p>
+          </div>
+        </div>
+        <div className="timeline-cta">
+          <a href="#contact" className="btn-primary">Book a Free Consultation</a>
         </div>
       </section>
 
@@ -86,7 +145,7 @@ export default function Home() {
             <textarea rows="3" placeholder="What are you hoping to achieve before your wedding day?" />
           </div>
           <div className="form-submit">
-            <button type="button">Send Message</button>
+            <button type="button">Book a Free Consultation</button>
           </div>
         </div>
 
