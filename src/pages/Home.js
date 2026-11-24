@@ -76,7 +76,7 @@ export default function Home() {
       <section className="how">
         <div className="how-header">
           <h2 className="section-title">What you can <em>expect</em></h2>
-          <p className="section-sub">A simple, proven process to get you aisle-ready on your timeline.</p>
+          <p className="section-sub">A simple, proven process to get you Aisle Ready by your wedding date.</p>
         </div>
         <div className="steps">
           <div className="step">
