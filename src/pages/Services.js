@@ -70,7 +70,7 @@ export default function Services() {
                   <li className="prog-feature" key={j}>{f}</li>
                 ))}
               </ul>
-              <a href="#contact" className="prog-cta">Book a Consultation</a>
+              <a href="#contact" className="prog-cta">Say I Do</a>
             </div>
           ))}
         </div>
@@ -81,7 +81,7 @@ export default function Services() {
       <section className="services-cta">
         <h2 className="section-title">Not sure which program is right for you?</h2>
         <p className="section-sub">Book a free 30-minute consultation and Bobby will help you find the right fit for your timeline and goals.</p>
-        <a href="#contact" className="btn-primary">Book a Free Consult</a>
+        <a href="#contact" className="btn-primary">Say I Do</a>
         <p className="services-cta-note">* Required 3-month commitment, then month to month</p>
       </section>
 
