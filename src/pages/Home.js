@@ -9,7 +9,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-text">
           <div className="hero-tag">Wedding Fitness Coaching</div>
-          <h1>Feel fit, confident, and ready for your <em>wedding day</em> with Aisle Ready Fitness.</h1>
+          <h1>Feel fit, confident, and <em>Aisle Ready</em></h1>
           <p>Luxury personal training and nutrition coaching for brides, grooms, and wedding parties in Pittsburgh.</p>
           <div className="hero-actions">
             <a href="#contact" className="btn-primary">Say I Do</a>
