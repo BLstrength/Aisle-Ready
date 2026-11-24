@@ -27,11 +27,6 @@ export default function Home() {
           </div>
           <div className="trust-divider" />
           <div className="trust-item">
-            <span className="trust-num">Elite</span>
-            <span className="trust-label">Competitive Background</span>
-          </div>
-          <div className="trust-divider" />
-          <div className="trust-item">
             <span className="trust-num">1-on-1</span>
             <span className="trust-label">Personalized Programs</span>
           </div>
