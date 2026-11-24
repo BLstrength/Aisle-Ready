@@ -10,7 +10,7 @@ export default function Home() {
         <div className="hero-text">
           <div className="hero-tag">Wedding Fitness Coaching</div>
           <h1>Feel fit, confident, and ready for your <em>wedding day</em> with Aisle Ready Fitness.</h1>
-          <p>Luxury personal training and nutrition coaching for brides, grooms, and wedding parties — in Pittsburgh or online.</p>
+          <p>Luxury personal training and nutrition coaching for brides, grooms, and wedding parties in Pittsburgh.</p>
           <div className="hero-actions">
             <a href="#contact" className="btn-primary">Book a Free Consultation</a>
             <Link to="/services" className="btn-ghost">View Programs</Link>
@@ -38,7 +38,7 @@ export default function Home() {
           <div className="trust-divider" />
           <div className="trust-item">
             <span className="trust-num">PGH</span>
-            <span className="trust-label">In-Person &amp; Online</span>
+            <span className="trust-label">Pittsburgh, PA</span>
           </div>
         </div>
       </section>
