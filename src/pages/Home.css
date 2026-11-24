@@ -173,6 +173,15 @@
   margin-bottom: 3rem;
 }
 
+.timeline-header .section-title {
+  color: var(--black);
+}
+
+.timeline-header .section-sub {
+  color: var(--charcoal);
+  font-size: 1.05rem;
+}
+
 .timeline-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
