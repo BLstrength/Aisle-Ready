@@ -99,8 +99,8 @@ export default function Home() {
 
       {/* CTA / Contact */}
       <section className="cta-section" id="contact">
-        <h2 className="section-title">Let's build your <em>plan</em></h2>
-        <p className="section-sub">Fill out the form below and Bobby will be in touch to schedule your free 30-minute consultation.</p>
+        <h2 className="section-title">Let's Get You <em>Aisle Ready</em></h2>
+        <p className="section-sub">Fill out the form and we'll reach out to set up your free call and first training session.</p>
 
         <div className="contact-form-card">
           <div className="form-row-2">
