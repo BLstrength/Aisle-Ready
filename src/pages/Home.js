@@ -12,7 +12,7 @@ export default function Home() {
           <h1>Feel fit, confident, and ready for your <em>wedding day</em> with Aisle Ready Fitness.</h1>
           <p>Luxury personal training and nutrition coaching for brides, grooms, and wedding parties in Pittsburgh.</p>
           <div className="hero-actions">
-            <a href="#contact" className="btn-primary">Book a Free Consultation</a>
+            <a href="#contact" className="btn-primary">Say I Do</a>
             <Link to="/services" className="btn-ghost">View Programs</Link>
           </div>
         </div>
@@ -69,7 +69,7 @@ export default function Home() {
         </div>
         <p className="timeline-flex-note">Don't see your timeline? Every plan can be adjusted to any length. Just tell us your date.</p>
         <div className="timeline-cta">
-          <a href="#contact" className="btn-primary">Book a Free Consultation</a>
+          <a href="#contact" className="btn-primary">Say I Do</a>
         </div>
       </section>
 
@@ -141,7 +141,7 @@ export default function Home() {
             <textarea rows="3" placeholder="What are you hoping to achieve before your wedding day?" />
           </div>
           <div className="form-submit">
-            <button type="button">Book a Free Consultation</button>
+            <button type="button">Say I Do</button>
           </div>
         </div>
 
