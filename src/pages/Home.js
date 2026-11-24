@@ -12,7 +12,7 @@ export default function Home() {
           <p>Luxury wedding fitness and nutrition in Pittsburgh</p>
           <div className="hero-actions">
             <a href="#contact" className="btn-primary">Say I Do</a>
-            <Link to="/services" className="btn-ghost">View Programs</Link>
+            <Link to="/services" className="btn-ghost">View Services</Link>
           </div>
         </div>
       </section>
