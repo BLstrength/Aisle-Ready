@@ -92,7 +92,7 @@ export default function Home() {
           <div className="step">
             <div className="step-num">3</div>
             <h3>Ongoing Coaching</h3>
-            <p>Regular check-ins, in person sessions, progress pictures, program adjustments, and accountability every step of the way until your big day.</p>
+            <p>Regular communication, in person sessions, program adjustments, and accountability every step of the way until your big day.</p>
           </div>
         </div>
       </section>
