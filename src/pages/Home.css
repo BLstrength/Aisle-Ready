@@ -284,6 +284,15 @@
   margin-bottom: 3.5rem;
 }
 
+.how-header .section-title {
+  color: var(--black);
+}
+
+.how-header .section-sub {
+  color: var(--charcoal);
+  font-size: 1.05rem;
+}
+
 .section-title {
   font-family: 'Lora', serif;
   font-size: clamp(1.8rem, 3vw, 2.6rem);
