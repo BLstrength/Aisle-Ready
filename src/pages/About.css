@@ -11,7 +11,7 @@
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #6B5010;
+  color: var(--gold-dark);
   margin-bottom: 0.75rem;
 }
 
@@ -19,13 +19,13 @@
   font-family: 'Lora', serif;
   font-size: clamp(1.9rem, 3.5vw, 2.8rem);
   line-height: 1.2;
-  color: var(--charcoal);
+  color: var(--black);
   margin-bottom: 1.5rem;
 }
 
 .about .page-title em {
   font-style: italic;
-  color: #6B5010;
+  color: var(--gold-dark);
 }
 
 .about-body p {
