@@ -46,6 +46,8 @@ export default function Services() {
               <li>Same day replies from your coach, 7 days a week</li>
               <li>Starting assessment: measurements, photos, and posture</li>
               <li>Progress check-ins every 4 weeks, with updated measurements and photos</li>
+              <li>$1000 per month in person</li>
+              <li><strong>$500</strong> per month online</li>
             </ul>
             <a href="#contact" className="btn-primary">Say I Do</a>
           </div>
@@ -59,6 +61,8 @@ export default function Services() {
               <li>Photo ready posture coaching</li>
               <li>Final week peaking plan for energy, a fuller look and less bloating</li>
               <li>1 complimentary session for a partner or friend</li>
+              <li>$1650 per month in person</li>
+              <li><strong>$825</strong> per month online</li>
             </ul>
             <a href="#contact" className="btn-primary">Say I Do</a>
           </div>
