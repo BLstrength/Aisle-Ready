@@ -30,7 +30,7 @@ export default function Services() {
       <section className="services-header">
         <div className="page-tag">Packages & Pricing</div>
         <h1 className="page-title">Choose your <em>package</em></h1>
-        <p className="services-sub">Every package is built around your wedding date, your body, and your goals. Minimum 3-month commitment, then month to month.</p>
+        <p className="services-sub">Choose the package that fits your lifestyle. Both are built around your wedding date with your goals in mind.</p>
       </section>
 
       <section className="services-packages-section">
