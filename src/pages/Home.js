@@ -52,10 +52,9 @@ export default function Home() {
               <li>Daily check-ins</li>
               <li>Minimum 3-month commitment</li>
             </ul>
-            <a href="#contact" className="btn-ghost">Say I Do</a>
+            <a href="#contact" className="btn-ghost pkg-btn">Say I Do</a>
           </div>
           <div className="pkg-card pkg-card--gold">
-            <div className="pkg-badge">Most Popular</div>
             <div className="pkg-tier">Gold Package</div>
             <ul className="pkg-features">
               <li>5 in-person training sessions per week</li>

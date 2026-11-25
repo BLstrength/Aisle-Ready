@@ -383,6 +383,9 @@
 }
 
 .packages-header { margin-bottom: 3rem; }
+.packages-section .section-title { color: var(--black); }
+.packages-section .section-title em { color: var(--gold-dark, #9A7A30); }
+.packages-section .section-sub { color: rgba(0,0,0,0.6); }
 
 .packages-grid {
   display: grid;
@@ -466,6 +469,11 @@
   left: 0;
   color: var(--gold);
   font-weight: 700;
+}
+
+.pkg-btn {
+  color: var(--black) !important;
+  border-color: rgba(0,0,0,0.25) !important;
 }
 
 /* ── RESPONSIVE ── */

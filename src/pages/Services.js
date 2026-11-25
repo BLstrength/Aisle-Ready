@@ -37,7 +37,6 @@ export default function Services() {
         <div className="services-grid services-grid--2col">
           {packages.map((p, i) => (
             <div className={`service-card${p.featured ? ' featured' : ''}`} key={i}>
-              {p.featured && <div className="popular-badge">Most Popular</div>}
               <div className="prog-name">{p.tier}</div>
               <ul className="prog-features">
                 {p.features.map((f, j) => (
