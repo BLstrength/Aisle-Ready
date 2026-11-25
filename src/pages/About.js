@@ -19,9 +19,9 @@ export default function About() {
       <section className="approach-section">
         <div className="approach-header">
           <h2 className="section-title">About <em>Aisle Ready Fitness</em></h2>
-          <p className="section-sub">Built on one belief: everyone deserves to feel their best on their wedding day.</p>
         </div>
         <div className="about-body">
+          <p>Aisle Ready Fitness was built on one belief: everyone deserves to feel their best on their wedding day.</p>
           <p>That means no intense boot camps and no crash diets. You get a plan built around your wedding date, your body and your life, and a coach who's with you at every step.</p>
           <p>Whether your wedding is 3 months away or more than a year out, Bobby will build a training and nutrition plan that gets you to your date feeling fit, confident and completely yourself.</p>
         </div>
