@@ -11,7 +11,7 @@ export default function About() {
             <h1 className="page-title">Meet <em>Your Coach</em></h1>
             <div className="about-body">
               <p>I'm Bobby Lawson, a Pittsburgh based coach who helps people lose weight, get stronger and feel at home in their own bodies. I started lifting as a kid, and over the years, fitness became the place where I built my own confidence. Now I help others find that same feeling.</p>
-              <p>My approach is personal. I've been through my own body transformation, so I know how hard it is to start and how frustrating setbacks can be. I also know how good it feels when the results finally show. That's why I coach with patience, honesty and encouragement, and never with judgment.</p>
+              <p>My approach is personal. I've been through my own body transformation, so I know how hard it is to start and how frustrating setbacks can be. I have 17 years of experience in the gym and 11 world records. So I also know how good it feels when the results finally show. That's why I coach with patience, honesty and encouragement, and never with judgment.</p>
               <p>No experience is needed. Whether you've never set foot in a gym or you're just getting back into it, I'll meet you where you are.</p>
             </div>
           </div>
