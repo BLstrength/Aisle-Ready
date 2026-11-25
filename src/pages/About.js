@@ -7,36 +7,23 @@ export default function About() {
       {/* Page Hero */}
       <section className="about-hero">
         <div className="page-tag">About Your Coach</div>
-        <h1 className="page-title">Bobby Lawson — <em>Aisle Ready Fitness</em></h1>
+        <h1 className="page-title">Meet <em>Your Coach</em></h1>
         <div className="about-body">
-          <p>Bobby Lawson is an experienced strength and fitness coach who has spent years helping people build real, lasting results. He brings that same commitment and discipline to every client he coaches — including the ones training for one of the most important days of their lives.</p>
-          <p>Aisle Ready Fitness was built on a simple belief: that brides and grooms deserve the same quality of coaching that high-performing athletes get. Not generic workouts. Not fad diets. A real plan, built around your wedding date, your body, and your life.</p>
-          <p>Whether you have 3 months or a full year, Bobby will design a training and nutrition program that gets you feeling strong, confident, and completely yourself when you walk down the aisle.</p>
+          <p>I'm Bobby Lawson, a Pittsburgh based coach who helps people lose weight, get stronger and feel at home in their own bodies. I started lifting as a kid, and over the years, fitness became the place where I built my own confidence. Now I help others find that same feeling.</p>
+          <p>My approach is personal. I've been through my own body transformation, so I know how hard it is to start and how frustrating setbacks can be. I also know how good it feels when the results finally show. That's why I coach with patience, honesty and encouragement, and never with judgment.</p>
+          <p>No experience is needed. Whether you've never set foot in a gym or you're just getting back into it, I'll meet you where you are.</p>
         </div>
       </section>
 
-      {/* Approach */}
+      {/* About Aisle Ready */}
       <section className="approach-section">
         <div className="approach-header">
-          <h2 className="section-title">The <em>approach</em></h2>
-          <p className="section-sub">Real coaching built on real results — not templates or guesswork.</p>
+          <h2 className="section-title">About <em>Aisle Ready Fitness</em></h2>
+          <p className="section-sub">Built on one belief: everyone deserves to feel their best on their wedding day.</p>
         </div>
-        <div className="approach-grid">
-          <div className="approach-card">
-            <div className="approach-icon">🏋️</div>
-            <h3>Strength-First Training</h3>
-            <p>Every program is built around functional strength — the kind that changes how you look, move, and feel in your dress or suit on wedding day.</p>
-          </div>
-          <div className="approach-card">
-            <div className="approach-icon">🥗</div>
-            <h3>Nutrition Guidance</h3>
-            <p>No crash diets. Macro coaching aligned to your training and your timeline, so you're fueled and feeling great when it counts.</p>
-          </div>
-          <div className="approach-card">
-            <div className="approach-icon">📋</div>
-            <h3>Accountability Coaching</h3>
-            <p>Weekly check-ins, program adjustments, and direct access to Bobby throughout your entire wedding countdown.</p>
-          </div>
+        <div className="about-body">
+          <p>That means no intense boot camps and no crash diets. You get a plan built around your wedding date, your body and your life, and a coach who's with you at every step.</p>
+          <p>Whether your wedding is 3 months away or more than a year out, Bobby will build a training and nutrition plan that gets you to your date feeling fit, confident and completely yourself.</p>
         </div>
       </section>
 
