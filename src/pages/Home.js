@@ -59,7 +59,7 @@ export default function Home() {
             <div className="pkg-tier">Gold Package</div>
             <p className="pkg-includes">Everything in Silver, plus:</p>
             <ul className="pkg-features">
-              <li>5 private in-person training sessions per week</li>
+              <li>5 private in-person training sessions per week, instead of 3</li>
               <li>Priority scheduling</li>
               <li>Fully custom meal plan with recipes and macro targets</li>
               <li>Photo ready posture coaching</li>
