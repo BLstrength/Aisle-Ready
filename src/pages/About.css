@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.page-tag {
+.about .page-tag {
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -47,7 +47,7 @@
   margin-bottom: 3rem;
 }
 
-.section-title {
+.approach-section .section-title {
   font-family: 'Lora', serif;
   font-size: clamp(1.8rem, 3vw, 2.4rem);
   line-height: 1.25;
@@ -55,12 +55,12 @@
   margin-bottom: 0.75rem;
 }
 
-.section-title em {
+.approach-section .section-title em {
   font-style: italic;
   color: var(--gold);
 }
 
-.section-sub {
+.approach-section .section-sub {
   font-size: 1rem;
   color: rgba(255,255,255,0.55);
   line-height: 1.7;

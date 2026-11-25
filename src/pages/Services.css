@@ -5,7 +5,7 @@
   background: var(--black);
 }
 
-.page-tag {
+.services-header .page-tag {
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -14,7 +14,7 @@
   margin-bottom: 0.75rem;
 }
 
-.page-title {
+.services-header .page-title {
   font-family: 'Lora', serif;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.2;
@@ -22,7 +22,7 @@
   margin-bottom: 1rem;
 }
 
-.page-title em {
+.services-header .page-title em {
   font-style: italic;
   color: var(--gold);
 }
