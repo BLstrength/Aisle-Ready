@@ -7,6 +7,7 @@ const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbycbVs5mKlvxCfXNMh6J
 const EMPTY = { firstName: '', lastName: '', phone: '', email: '', weddingDate: '', goals: '' }
 
 export default function Home() {
+  const [mode, setMode] = useState('inperson')
   const [form, setForm] = useState(EMPTY)
   const [status, setStatus] = useState('idle') // idle | sending | success | error
 
@@ -66,46 +67,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Timeline Hook */}
-      <section className="timeline-section">
-        <div className="timeline-header">
-          <h2 className="section-title">A package for <em>every</em> timeline</h2>
-          <p className="section-sub">These are our most common timelines, but we'll build a plan for any number of months until your big day.</p>
+      {/* Packages */}
+      <section className="packages-section">
+        <div className="packages-header">
+          <h2 className="section-title">Two packages. <em>One goal.</em></h2>
+          <p className="section-sub">Choose the package that fits your lifestyle. Both are built around your wedding date with your goals in mind.</p>
         </div>
-        <div className="timeline-grid">
-          <div className="tl-card">
-            <div className="tl-months">3</div>
-            <div className="tl-unit">months</div>
-            <p>Focused, high-intensity prep for couples on a tighter timeline. Rapid results without cutting corners.</p>
+        <div className="pkg-toggle">
+          <button
+            className={`pkg-toggle-btn${mode === 'inperson' ? ' active' : ''}`}
+            onClick={() => setMode('inperson')}
+          >In Person</button>
+          <button
+            className={`pkg-toggle-btn${mode === 'online' ? ' active' : ''}`}
+            onClick={() => setMode('online')}
+          >Online</button>
+        </div>
+        <div className="packages-grid">
+          <div className="pkg-card">
+            <div className="pkg-tier">Silver Package</div>
+            <div className="pkg-price">{mode === 'inperson' ? '$1,000' : '$500'}<span>/mo</span></div>
+            <ul className="pkg-features">
+              <li>{mode === 'inperson' ? '3 private in-person training sessions per week' : '3 day training plan per week'}</li>
+              <li>Custom weekly nutrition plan, adjusted as you progress</li>
+              <li>Same day replies from your coach, 7 days a week</li>
+              <li>Starting assessment: measurements, photos, and posture</li>
+              <li>Progress check-ins every 4 weeks, with updated measurements and photos</li>
+            </ul>
+            <a href="#contact" className="btn-primary">Say I Do</a>
           </div>
-          <div className="tl-card">
-            <div className="tl-months">6</div>
-            <div className="tl-unit">months</div>
-            <p>The most popular choice. Enough time to build real strength, lose body fat, and lock in lasting habits.</p>
-          </div>
-          <div className="tl-card tl-card--featured">
-            <div className="tl-badge">Most Transformative</div>
-            <div className="tl-months">9</div>
-            <div className="tl-unit">months</div>
-            <p>Build a truly strong, sculpted physique from the ground up. Deep habit formation and peak-day peaking.</p>
-          </div>
-          <div className="tl-card">
-            <div className="tl-months">12</div>
-            <div className="tl-unit">months</div>
-            <p>The full journey — comprehensive fitness and nutrition transformation starting from day one of your engagement.</p>
+          <div className="pkg-card pkg-card--gold">
+            <div className="pkg-tier">Gold Package</div>
+            <div className="pkg-price">{mode === 'inperson' ? '$1,650' : '$825'}<span>/mo</span></div>
+            <p className="pkg-includes">Everything in Silver, plus:</p>
+            <ul className="pkg-features">
+              <li>{mode === 'inperson' ? '5 private in-person training sessions per week' : '5 day training plan per week'}</li>
+              {mode === 'inperson' && <li>Priority scheduling</li>}
+              <li>Fully custom meal plan with recipes and macro targets</li>
+              <li>Photo ready posture coaching</li>
+              <li>Final week peaking plan for energy, a fuller look and less bloating</li>
+              {mode === 'inperson' && <li>1 complimentary session for a partner or friend</li>}
+            </ul>
+            <a href="#contact" className="btn-primary">Say I Do</a>
           </div>
         </div>
-        <p className="timeline-flex-note">Don't see your timeline? Every plan can be adjusted to any length. Just tell us your date.</p>
-        <div className="timeline-cta">
-          <a href="#contact" className="btn-primary">Say I Do</a>
-        </div>
+        <p className="packages-footnote">*Minimum 3-month commitment required for all packages.</p>
       </section>
 
       {/* How It Works */}
       <section className="how">
         <div className="how-header">
           <h2 className="section-title">What you can <em>expect</em></h2>
-          <p className="section-sub">A simple, proven process to get you aisle-ready on your timeline.</p>
+          <p className="section-sub">A simple, proven process to get you Aisle Ready by your wedding date.</p>
         </div>
         <div className="steps">
           <div className="step">
@@ -116,12 +129,12 @@ export default function Home() {
           <div className="step">
             <div className="step-num">2</div>
             <h3>Your Custom Program</h3>
-            <p>A fully personalized training and nutrition plan built around your countdown — whether that's 3 months or a full year.</p>
+            <p>A fully personalized training and nutrition plan built around your countdown.</p>
           </div>
           <div className="step">
             <div className="step-num">3</div>
             <h3>Ongoing Coaching</h3>
-            <p>Regular check-ins, program adjustments, and accountability every step of the way until your big day.</p>
+            <p>Regular communication, in person sessions, program adjustments, and accountability every step of the way until your big day.</p>
           </div>
         </div>
       </section>
