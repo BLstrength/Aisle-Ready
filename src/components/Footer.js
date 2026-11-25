@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-brand">
         <img src="/logo.png" alt="Aisle Ready Fitness" className="footer-logo" />
-        <p className="footer-tagline">Elite coaching for your wedding day.</p>
+        <p className="footer-tagline">Luxury coaching for your wedding day.</p>
       </div>
       <div className="footer-links">
         <Link to="/">Home</Link>
