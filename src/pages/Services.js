@@ -45,7 +45,7 @@ export default function Services() {
             <div className="pkg-tier">Gold Package</div>
             <div className="pkg-price-wrapper">
               <span className="pkg-price-original">{mode === 'inperson' ? '$1,750' : '$875'}/mo</span>
-              <div className="pkg-price">{mode === 'inperson' ? '$1,650' : '$825'}<span>/mo</span></div>
+              <div className="pkg-price">{mode === 'inperson' ? '$1,600' : '$800'}<span>/mo</span></div>
             </div>
             <p className="pkg-includes">Everything in Silver, plus:</p>
             <ul className="pkg-features">
