@@ -409,4 +409,5 @@
 @media (max-width: 900px) {
   .services-grid { grid-template-columns: 1fr; max-width: 480px; }
   .services-packages-section .packages-grid { grid-template-columns: 1fr; }
+  .pkg-card { padding-top: 5rem; }
 }
