@@ -49,7 +49,7 @@ export default function Home() {
             <ul className="pkg-features">
               <li>3 private in-person training sessions per week</li>
               <li>Custom weekly nutrition plan, adjusted as you progress</li>
-              <li>Daily coach check-ins by text</li>
+              <li>Same-day replies from your coach, 7 days a week</li>
               <li>Starting assessment: measurements, photos, posture and strength</li>
               <li>Progress check-ins every 4 weeks, with updated measurements and photos</li>
             </ul>
@@ -62,7 +62,6 @@ export default function Home() {
               <li>5 private in-person training sessions per week</li>
               <li>Priority scheduling</li>
               <li>Fully custom meal plan with recipes and macro targets</li>
-              <li>Same-day replies from your coach, 7 days a week</li>
               <li>Photo-ready posture coaching for shoulders, back and arms</li>
               <li>Final-week peaking plan for energy, a fuller look and less bloating</li>
               <li>1 complimentary session for a partner, bridesmaid or mom</li>
