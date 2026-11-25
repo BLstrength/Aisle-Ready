@@ -57,6 +57,7 @@ export default function Home() {
           </div>
           <div className="pkg-card pkg-card--gold">
             <div className="pkg-tier">Gold Package</div>
+            <p className="pkg-includes">Everything in Silver, plus:</p>
             <ul className="pkg-features">
               <li>5 private in-person training sessions per week</li>
               <li>Priority scheduling</li>

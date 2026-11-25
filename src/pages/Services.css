@@ -281,6 +281,15 @@
 
 .pkg-card--gold .pkg-tier { color: var(--gold); }
 
+.pkg-includes {
+  font-size: 0.8rem;
+  font-style: italic;
+  letter-spacing: 0.03em;
+  color: rgba(255,255,255,0.5);
+  margin: -0.5rem 0 0;
+  text-transform: uppercase;
+}
+
 .pkg-features {
   list-style: none;
   padding: 0;
