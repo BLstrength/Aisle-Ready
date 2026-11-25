@@ -58,9 +58,13 @@ export default function Home() {
           <div className="pkg-card pkg-card--gold">
             <div className="pkg-tier">Gold Package</div>
             <ul className="pkg-features">
-              <li>5 in-person training sessions per week</li>
-              <li>Weekly nutrition plans</li>
-              <li>Daily check-ins</li>
+              <li>5 private in-person training sessions per week</li>
+              <li>Priority scheduling</li>
+              <li>Fully custom meal plan with recipes and macro targets</li>
+              <li>Same-day replies from your coach, 7 days a week</li>
+              <li>Photo-ready posture coaching for shoulders, back and arms</li>
+              <li>Final-week peaking plan for energy, a fuller look and less bloating</li>
+              <li>1 complimentary session for a partner, bridesmaid or mom</li>
             </ul>
             <a href="#contact" className="btn-primary">Say I Do</a>
           </div>
