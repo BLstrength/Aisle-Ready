@@ -242,6 +242,13 @@
   margin: 0 auto;
 }
 
+.services-packages-section .packages-footnote {
+  margin-top: 1.5rem;
+  color: rgba(0,0,0,0.5);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
 .pkg-card {
   background: #fff;
   border: 1px solid rgba(201, 164, 82, 0.25);
