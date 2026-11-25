@@ -34,7 +34,7 @@ export default function Services() {
               <li>Starting assessment: measurements, photos, and posture</li>
               <li>Progress check-ins every 4 weeks, with updated measurements and photos</li>
             </ul>
-            <a href="/#contact" className="btn-primary">Say I Do</a>
+            <a href="#contact" className="btn-primary">Say I Do</a>
           </div>
           <div className="pkg-card pkg-card--gold">
             <div className="pkg-tier">Gold Package</div>
@@ -48,7 +48,7 @@ export default function Services() {
               <li>Final week peaking plan for energy, a fuller look and less bloating</li>
               {mode === 'inperson' && <li>1 complimentary session for a partner or friend</li>}
             </ul>
-            <a href="/#contact" className="btn-primary">Say I Do</a>
+            <a href="#contact" className="btn-primary">Say I Do</a>
           </div>
         </div>
         <p className="packages-footnote">*Minimum 3-month commitment required for all packages.</p>
