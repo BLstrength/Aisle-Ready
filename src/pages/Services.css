@@ -275,17 +275,17 @@
 
 .services-packages-section .pkg-bf-badge {
   position: absolute;
-  top: 36px;
-  left: -34px;
-  width: 140px;
+  top: 46px;
+  left: -46px;
+  width: 190px;
   background: #c0392b;
   color: #fff;
-  font-size: 0.62rem;
+  font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   text-align: center;
-  padding: 9px 0;
+  padding: 13px 0;
   transform: rotate(-45deg);
   box-shadow: 0 3px 10px rgba(0,0,0,0.3);
 }
