@@ -50,7 +50,6 @@ export default function Home() {
               <li>3 in-person training sessions per week</li>
               <li>Weekly nutrition plans</li>
               <li>Daily check-ins</li>
-              <li>Minimum 3-month commitment</li>
             </ul>
             <a href="#contact" className="btn-primary">Say I Do</a>
           </div>
@@ -60,11 +59,11 @@ export default function Home() {
               <li>5 in-person training sessions per week</li>
               <li>Weekly nutrition plans</li>
               <li>Daily check-ins</li>
-              <li>Minimum 3-month commitment</li>
             </ul>
             <a href="#contact" className="btn-primary">Say I Do</a>
           </div>
         </div>
+        <p className="packages-footnote">*Minimum 3-month commitment required for all packages.</p>
       </section>
 
       {/* How It Works */}
