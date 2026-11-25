@@ -28,7 +28,7 @@ export default function Services() {
             <div className="pkg-tier">Silver Package</div>
             <div className="pkg-price">{mode === 'inperson' ? '$1,000' : '$500'}<span>/mo</span></div>
             <ul className="pkg-features">
-              <li>{mode === 'inperson' ? '3 private in-person training sessions per week' : '3 day per week training plan'}</li>
+              <li>{mode === 'inperson' ? '3 private in-person training sessions per week' : '3 day training plan per week'}</li>
               <li>Custom weekly nutrition plan, adjusted as you progress</li>
               <li>Same day replies from your coach, 7 days a week</li>
               <li>Starting assessment: measurements, photos, and posture</li>
@@ -41,7 +41,7 @@ export default function Services() {
             <div className="pkg-price">{mode === 'inperson' ? '$1,650' : '$825'}<span>/mo</span></div>
             <p className="pkg-includes">Everything in Silver, plus:</p>
             <ul className="pkg-features">
-              <li>{mode === 'inperson' ? '5 private in-person training sessions per week' : '5 day per week training plan'}</li>
+              <li>{mode === 'inperson' ? '5 private in-person training sessions per week, instead of 3' : '5 day training plan per week, instead of 3'}</li>
               <li>Priority scheduling</li>
               <li>Fully custom meal plan with recipes and macro targets</li>
               <li>Photo ready posture coaching</li>
