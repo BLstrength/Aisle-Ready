@@ -75,7 +75,7 @@ export default function Home() {
             <p className="pkg-includes">Everything in Silver, plus:</p>
             <ul className="pkg-features">
               <li>{mode === 'inperson' ? '5 private in-person training sessions per week, instead of 3' : '5 day training plan per week, instead of 3'}</li>
-              {mode === 'inperson' && <li>Priority scheduling</li>}
+
               <li>Fully custom meal plan with recipes and macro targets</li>
               <li>Photo ready posture coaching</li>
               <li>Final week peaking plan for energy, a fuller look and less bloating</li>
