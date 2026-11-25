@@ -4,10 +4,11 @@ const packages = [
   {
     tier: 'Silver Package',
     features: [
-      '3 in-person training sessions per week',
-      'Weekly nutrition plans',
-      'Daily check-ins',
-      'Minimum 3-month commitment',
+      '3 private in-person training sessions per week',
+      'Custom weekly nutrition plan, adjusted as you progress',
+      'Daily coach check-ins by text',
+      'Starting assessment: measurements, photos, posture and strength',
+      'Progress check-ins every 4 weeks, with updated measurements and photos',
     ],
     featured: false,
   },
@@ -17,7 +18,6 @@ const packages = [
       '5 in-person training sessions per week',
       'Weekly nutrition plans',
       'Daily check-ins',
-      'Minimum 3-month commitment',
     ],
     featured: true,
   },
@@ -38,9 +38,11 @@ export default function Services() {
           <div className="pkg-card">
             <div className="pkg-tier">Silver Package</div>
             <ul className="pkg-features">
-              <li>3 in-person training sessions per week</li>
-              <li>Weekly nutrition plans</li>
-              <li>Daily check-ins</li>
+              <li>3 private in-person training sessions per week</li>
+              <li>Custom weekly nutrition plan, adjusted as you progress</li>
+              <li>Daily coach check-ins by text</li>
+              <li>Starting assessment: measurements, photos, posture and strength</li>
+              <li>Progress check-ins every 4 weeks, with updated measurements and photos</li>
             </ul>
             <a href="#contact" className="btn-primary">Say I Do</a>
           </div>
