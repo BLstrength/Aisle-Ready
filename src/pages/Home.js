@@ -41,7 +41,7 @@ export default function Home() {
       <section className="packages-section">
         <div className="packages-header">
           <h2 className="section-title">Two packages. <em>One goal.</em></h2>
-          <p className="section-sub">Choose the level that fits your lifestyle. Both are built around your wedding date with a minimum 3-month commitment.</p>
+          <p className="section-sub">Choose the package that fits your lifestyle. Both are built around your wedding date with your goals in mind.</p>
         </div>
         <div className="packages-grid">
           <div className="pkg-card">
