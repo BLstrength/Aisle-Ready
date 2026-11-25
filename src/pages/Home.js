@@ -49,8 +49,8 @@ export default function Home() {
             <ul className="pkg-features">
               <li>3 private in-person training sessions per week</li>
               <li>Custom weekly nutrition plan, adjusted as you progress</li>
-              <li>Same-day replies from your coach, 7 days a week</li>
-              <li>Starting assessment: measurements, photos, posture and strength</li>
+              <li>Same day replies from your coach, 7 days a week</li>
+              <li>Starting assessment: measurements, photos, and posture</li>
               <li>Progress check-ins every 4 weeks, with updated measurements and photos</li>
             </ul>
             <a href="#contact" className="btn-primary">Say I Do</a>
