@@ -33,19 +33,28 @@ export default function Services() {
         <p className="services-sub">Every package is built around your wedding date, your body, and your goals. Minimum 3-month commitment, then month to month.</p>
       </section>
 
-      <section className="services-grid-section">
-        <div className="services-grid services-grid--2col">
-          {packages.map((p, i) => (
-            <div className={`service-card${p.featured ? ' featured' : ''}`} key={i}>
-              <div className="prog-name">{p.tier}</div>
-              <ul className="prog-features">
-                {p.features.map((f, j) => (
-                  <li className="prog-feature" key={j}>{f}</li>
-                ))}
-              </ul>
-              <a href="#contact" className="prog-cta">Say I Do</a>
-            </div>
-          ))}
+      <section className="services-packages-section">
+        <div className="packages-grid">
+          <div className="pkg-card">
+            <div className="pkg-tier">Silver Package</div>
+            <ul className="pkg-features">
+              <li>3 in-person training sessions per week</li>
+              <li>Weekly nutrition plans</li>
+              <li>Daily check-ins</li>
+              <li>Minimum 3-month commitment</li>
+            </ul>
+            <a href="#contact" className="btn-primary">Say I Do</a>
+          </div>
+          <div className="pkg-card pkg-card--gold">
+            <div className="pkg-tier">Gold Package</div>
+            <ul className="pkg-features">
+              <li>5 in-person training sessions per week</li>
+              <li>Weekly nutrition plans</li>
+              <li>Daily check-ins</li>
+              <li>Minimum 3-month commitment</li>
+            </ul>
+            <a href="#contact" className="btn-primary">Say I Do</a>
+          </div>
         </div>
       </section>
 
