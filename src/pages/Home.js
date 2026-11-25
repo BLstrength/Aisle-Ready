@@ -37,38 +37,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Timeline Hook */}
-      <section className="timeline-section">
-        <div className="timeline-header">
-          <h2 className="section-title">A package for <em>every</em> timeline</h2>
-          <p className="section-sub">These are our most common timelines, but we'll build a plan for any number of months until your big day.</p>
+      {/* Packages */}
+      <section className="packages-section">
+        <div className="packages-header">
+          <h2 className="section-title">Two packages. <em>One goal.</em></h2>
+          <p className="section-sub">Choose the level that fits your lifestyle. Both are built around your wedding date with a minimum 3-month commitment.</p>
         </div>
-        <div className="timeline-grid">
-          <div className="tl-card">
-            <div className="tl-months">3</div>
-            <div className="tl-unit">months</div>
-            <p>Focused, high-intensity prep for couples on a tighter timeline. Rapid results without cutting corners.</p>
+        <div className="packages-grid">
+          <div className="pkg-card">
+            <div className="pkg-tier">Silver Package</div>
+            <ul className="pkg-features">
+              <li>3 in-person training sessions per week</li>
+              <li>Weekly nutrition plans</li>
+              <li>Daily check-ins</li>
+              <li>Minimum 3-month commitment</li>
+            </ul>
+            <a href="#contact" className="btn-ghost">Say I Do</a>
           </div>
-          <div className="tl-card">
-            <div className="tl-months">6</div>
-            <div className="tl-unit">months</div>
-            <p>The most popular choice. Enough time to build real strength, lose body fat, and lock in lasting habits.</p>
+          <div className="pkg-card pkg-card--gold">
+            <div className="pkg-badge">Most Popular</div>
+            <div className="pkg-tier">Gold Package</div>
+            <ul className="pkg-features">
+              <li>5 in-person training sessions per week</li>
+              <li>Weekly nutrition plans</li>
+              <li>Daily check-ins</li>
+              <li>Minimum 3-month commitment</li>
+            </ul>
+            <a href="#contact" className="btn-primary">Say I Do</a>
           </div>
-          <div className="tl-card tl-card--featured">
-            <div className="tl-badge">Most Transformative</div>
-            <div className="tl-months">9</div>
-            <div className="tl-unit">months</div>
-            <p>Build a truly strong, sculpted physique from the ground up. Deep habit formation and peak-day peaking.</p>
-          </div>
-          <div className="tl-card">
-            <div className="tl-months">12</div>
-            <div className="tl-unit">months</div>
-            <p>The full journey — comprehensive fitness and nutrition transformation starting from day one of your engagement.</p>
-          </div>
-        </div>
-        <p className="timeline-flex-note">Don't see your timeline? Every plan can be adjusted to any length. Just tell us your date.</p>
-        <div className="timeline-cta">
-          <a href="#contact" className="btn-primary">Say I Do</a>
         </div>
       </section>
 

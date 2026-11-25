@@ -49,6 +49,11 @@
   margin: 0 auto;
 }
 
+.services-grid--2col {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 760px;
+}
+
 .service-card {
   background: var(--dark-card);
   border-radius: 24px;

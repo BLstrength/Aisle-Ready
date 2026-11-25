@@ -375,18 +375,110 @@
   line-height: 1.65;
 }
 
+/* ── PACKAGES ── */
+.packages-section {
+  background: var(--cream, #F7F4EF);
+  padding: 5rem 5%;
+  text-align: center;
+}
+
+.packages-header { margin-bottom: 3rem; }
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.pkg-card {
+  background: #fff;
+  border: 1px solid rgba(201, 164, 82, 0.25);
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pkg-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(201, 164, 82, 0.15);
+}
+
+.pkg-card--gold {
+  background: linear-gradient(145deg, #1A1608 0%, #2A2210 100%);
+  border-color: rgba(201, 164, 82, 0.5);
+}
+
+.pkg-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold);
+  color: var(--black);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+.pkg-tier {
+  font-family: 'Lora', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.pkg-card--gold .pkg-tier { color: var(--gold); }
+
+.pkg-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.pkg-features li {
+  font-size: 0.92rem;
+  color: var(--stone);
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+.pkg-card--gold .pkg-features li { color: rgba(255,255,255,0.75); }
+
+.pkg-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 700;
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .hero { padding: 4rem 5%; }
   .steps { grid-template-columns: 1fr; }
   .steps::before { display: none; }
-  .timeline-grid { grid-template-columns: repeat(2, 1fr); }
   .trust-divider:nth-child(4),
   .trust-divider:nth-child(6) { display: none; }
 }
 
 @media (max-width: 600px) {
-  .timeline-grid { grid-template-columns: 1fr; }
+  .packages-grid { grid-template-columns: 1fr; }
   .trust-divider { display: none; }
   .trust-inner { gap: 0.5rem; }
   .trust-item { padding: 0.5rem 1.5rem; }
