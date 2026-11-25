@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
+import '../components/ContactForm.css'
 
 const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbycbVs5mKlvxCfXNMh6JGtC9EITq7CLjtImyu0qxAiNbw4d0x3YROdxAkj_sqqaKsQXAg/exec'
 
