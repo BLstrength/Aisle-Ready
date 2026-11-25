@@ -8,7 +8,6 @@ export default function About() {
       <section className="about-hero">
         <div className="about-hero-inner">
           <div className="about-hero-text">
-            <div className="page-tag">About Your Coach</div>
             <h1 className="page-title">Meet <em>Your Coach</em></h1>
             <div className="about-body">
               <p>I'm Bobby Lawson, a Pittsburgh based coach who helps people lose weight, get stronger and feel at home in their own bodies. I started lifting as a kid, and over the years, fitness became the place where I built my own confidence. Now I help others find that same feeling.</p>
