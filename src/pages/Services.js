@@ -25,8 +25,12 @@ export default function Services() {
         </div>
         <div className="packages-grid">
           <div className="pkg-card">
+            <div className="pkg-bf-badge">Black Friday Sale</div>
             <div className="pkg-tier">Silver Package</div>
-            <div className="pkg-price">{mode === 'inperson' ? '$1,000' : '$500'}<span>/mo</span></div>
+            <div className="pkg-price-wrapper">
+              <span className="pkg-price-original">{mode === 'inperson' ? '$1,100' : '$550'}/mo</span>
+              <div className="pkg-price">{mode === 'inperson' ? '$1,000' : '$500'}<span>/mo</span></div>
+            </div>
             <ul className="pkg-features">
               <li>{mode === 'inperson' ? '3 private in-person training sessions per week' : '3 day training plan per week'}</li>
               <li>Custom weekly nutrition plan, adjusted as you progress</li>
@@ -37,8 +41,12 @@ export default function Services() {
             <a href="#contact" className="btn-primary">Say I Do</a>
           </div>
           <div className="pkg-card pkg-card--gold">
+            <div className="pkg-bf-badge">Black Friday Sale</div>
             <div className="pkg-tier">Gold Package</div>
-            <div className="pkg-price">{mode === 'inperson' ? '$1,650' : '$825'}<span>/mo</span></div>
+            <div className="pkg-price-wrapper">
+              <span className="pkg-price-original">{mode === 'inperson' ? '$1,750' : '$875'}/mo</span>
+              <div className="pkg-price">{mode === 'inperson' ? '$1,650' : '$825'}<span>/mo</span></div>
+            </div>
             <p className="pkg-includes">Everything in Silver, plus:</p>
             <ul className="pkg-features">
               <li>{mode === 'inperson' ? '5 private in-person training sessions per week, instead of 3' : '5 day training plan per week, instead of 3'}</li>
@@ -52,6 +60,7 @@ export default function Services() {
           </div>
         </div>
         <p className="packages-footnote">*Minimum 3-month commitment required for all packages.</p>
+        <p className="packages-footnote packages-footnote--bf">Black Friday sale pricing is limited to the first 3 sign ups.</p>
       </section>
 
     </main>

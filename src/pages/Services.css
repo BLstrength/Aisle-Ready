@@ -272,6 +272,34 @@
   color: #fff;
 }
 
+.services-packages-section .pkg-bf-badge {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.services-packages-section .pkg-price-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.services-packages-section .pkg-price-original {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(0,0,0,0.35);
+  text-decoration: line-through;
+}
+
+.services-packages-section .pkg-card--gold .pkg-price-original { color: rgba(255,255,255,0.35); }
+
 .services-packages-section .pkg-price {
   font-size: 2.4rem;
   font-weight: 700;
@@ -294,6 +322,12 @@
   color: rgba(0,0,0,0.5);
   font-size: 0.85rem;
   text-align: center;
+}
+
+.services-packages-section .packages-footnote--bf {
+  margin-top: 0.4rem;
+  color: rgba(0,0,0,0.65);
+  font-weight: 500;
 }
 
 .pkg-card {
