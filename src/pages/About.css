@@ -1,9 +1,41 @@
 /* ── ABOUT HERO ── */
 .about-hero {
-  max-width: 800px;
-  margin: 0 auto;
   padding: 5rem 5%;
-  text-align: center;
+}
+
+.about-hero-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.about-hero-text {
+  flex: 1;
+}
+
+.about-hero-photo {
+  flex-shrink: 0;
+  width: 320px;
+}
+
+.about-hero-photo img {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .about-hero-inner {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .about-hero-photo {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 
 .about .page-tag {
