@@ -232,6 +232,7 @@
 .services-packages-section {
   background: var(--cream, #F7F4EF);
   padding: 3rem 5% 5rem;
+  text-align: center;
 }
 
 .services-packages-section .packages-grid {
